@@ -41,7 +41,7 @@ function App() {
         />
 
         <main ref={homeRef} id='Home' className="flex-1">
-          <Home ref={homeRef} />
+          <Home ref={homeRef} projectRef={projectRef} skillRef={skillRef}/>
           <br />
           <br />
           <br />
