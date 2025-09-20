@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import letter from '../assets/Springer Acceptance Letter 1 -.pdf'
 
 interface ExperienceProps {
     scrollToContact: () => void;
@@ -132,6 +133,9 @@ const Experience = forwardRef<HTMLElement, ExperienceProps>(({scrollToContact}, 
                         <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Express.js</span>
                         <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Git</span>
                     </div>
+                </div>
+                <div className="text-gray-500 cursor-pointer text-left mt-3 hover:text-gray-700">
+                    <a href={letter} target="_blank" rel="noopener noreferrer"><span className="font-bold text-lg">→</span><button>View Acceptance Letter</button></a>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import {type RefObject, forwardRef } from 'react';
 import logo from '../assets/parulred.jpg'
+import resume from '../assets/RESUME.pdf'
 
 interface HomeProps {
   projectRef: RefObject<HTMLElement | null>;
@@ -40,7 +41,7 @@ const Home = forwardRef<HTMLElement, HomeProps>(({projectRef, skillRef}, ref) =>
         </div>
         <div className='mt-12 flex items-centre justify-center gap-12'>
           <button onClick={()=> scrollToSection(projectRef)} className='bg-gradient-to-r from-blue-500 to-blue-600 rounded-full px-10 py-4 text-white font-semibold hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 hover:from-blue-700 hover:to-blue-800'>View My Work</button>
-          <button className='text-md font-semibold text-gray-700 rounded-full border-gray-300 border-2 border-solid px-12 py-4 hover:border-gray-400 :hover:shadow-2xl hover:bg-gray-50'>⬇️ Download Resume</button>
+          <a href={resume} download="Parul_Jain_Resume.pdf"><button className='text-md font-semibold text-gray-700 rounded-full border-gray-300 border-2 border-solid px-12 py-4 hover:border-gray-400 :hover:shadow-2xl hover:bg-gray-50'>⬇️ Download Resume</button></a>
         </div>
         <div onClick={()=> scrollToSection(skillRef)} className='cursor-pointer flex items-center justify-center mt-8 text-2xl text-gray-500 hover:text-gray-900 animate-bounce delaye-2000'>↓</div>
       </div>
