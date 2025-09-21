@@ -45,12 +45,7 @@ function App() {
           <br />
           <br />
           <br />
-          <br />
-          <br />
-          <br />
           <Skills ref={skillRef} />
-          <br />
-          <br />
           <br />
           <br />
           <br />
@@ -61,12 +56,8 @@ function App() {
             <br />
             <br />
             <br />
-            <br />
-            <br />
             <Projects ref={projectRef} />
           </div>
-          <br />
-          <br />
           <br />
           <br />
           <br />
